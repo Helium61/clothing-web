@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+.logo {
+    width: 6rem; /* Adjust as needed */
+    height: 6rem; /* Same value to keep it square */
+    border-radius: 50%; /* Makes it circular */
+  }
+  
