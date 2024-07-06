@@ -1,3 +1,6 @@
+// src/components/Main.js
+import { Link } from 'react-router-dom';
+
 const Main = () => {
   return (
     <div>
@@ -19,9 +22,11 @@ const Main = () => {
               <h2 className="text-white text-xl font-bold mb-2 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">Card Title 1</h2>
               <p className="text-white text-base mb-4 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">This is a description for card 1. Customize it as needed.</p>
             </div>
-            <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
-              Men Clothes
-            </button>
+            <Link to="/men-categories">
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
+                Men Clothes
+              </button>
+            </Link>
           </div>
 
           {/* Card 2 */}
@@ -31,9 +36,11 @@ const Main = () => {
               <h2 className="text-white text-xl font-bold mb-2 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">Card Title 2</h2>
               <p className="text-white text-base mb-4 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">This is a description for card 2. Customize it as needed.</p>
             </div>
+            <Link to="/women-categories">
             <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
               Women Clothes
             </button>
+            </Link>
           </div>
 
           {/* Card 3 */}
@@ -43,9 +50,11 @@ const Main = () => {
               <h2 className="text-white text-xl font-bold mb-2 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">Card Title 3</h2>
               <p className="text-white text-base mb-4 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">This is a description for card 3. Customize it as needed.</p>
             </div>
+            <Link to="/tshirts-categories">
             <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
               Polo T-Shirts
             </button>
+            </Link>
           </div>
         </div>
 
@@ -57,7 +66,7 @@ const Main = () => {
         <div className="mt-20 flex justify-around">
           {/* Circle 1 */}
           <div className="flex flex-col items-center">
-            <div className="relative w-64 h-64 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
+            <div className="relative w-52 h-52 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
               <img src="src/assets/download (1).jfif" alt="Circle 1" className="h-60 object-cover" />
             </div>
             <p className="mt-4 text-center text-xl font-semibold font-serif">Xinnua Mall</p>
@@ -65,24 +74,25 @@ const Main = () => {
 
           {/* Circle 2 */}
           <div className="flex flex-col items-center">
-            <div className="relative w-64 h-64 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
+            <div className="relative w-52 h-52 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
               <img src="src/assets/download.jfif" alt="Circle 2" className="w-full h-60 object-cover" />
             </div>
             <p className="mt-4 text-center text-xl font-semibold font-serif">Siddique Trade Center</p>
           </div>
 
           {/* Circle 3 */}
-          <div className="flex flex-col items-center">
-            <div className="relative w-64 h-64 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
-              <img src="src/assets/images (1).jfif" alt="Circle 3" className="w-full  object-cover" />
-            </div>
-            <p className="mt-4 text-center text-xl font-semibold font-serif">Imperial Mall</p>
-          </div>
+          {/* // Inside the Circle 3 div: */}
+{/* <div className="flex flex-col items-center">
+  <div className="relative w-64 h-64 rounded-full overflow-hidden bg-white shadow-lg flex justify-center items-center">
+    <img src="src/assets/images (1).jfif" alt="Circle 3" className="w-full h-full object-cover" />
+  </div>
+  <p className="mt-4 text-center text-xl font-semibold font-serif">Imperial Mall</p>
+</div> */}
+
         </div>
         <div className="mt-10">
           <img src="src/assets/Black and White Simple Coming Soon Facebook Cover.png" className="w-full h-96" alt="" />
         </div>
-        
       </main>
     </div>
   );
